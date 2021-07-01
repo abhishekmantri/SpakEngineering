@@ -1,0 +1,137 @@
+# parameters:
+#     # Query parameters
+#     v0@Bearer:
+#         name: Authorization
+#         in: header
+#         type: string
+#         required: true
+#         description: Authorization bearer token
+#     v0@Apps:
+#         name: app
+#         in: query
+#         required: true
+#         type: string
+#         enum:
+#             - protobench-app
+#         description: App name
+#     v0@UserID:
+#         name: user_id
+#         in: query
+#         required: true
+#         type: string
+#         description: User ID
+#     v0@Filter:
+#         name: filters
+#         in: query
+#         type: string
+#         description: Parent filters
+#     v0@Sort:
+#         name: sort
+#         in: query
+#         type: string
+#         description: sort field
+#     v0@Page:
+#         name: page
+#         in: query
+#         type: integer
+#         minimum: 1
+#         default: 1
+#         description: Page number of the results
+#     v0@Size:
+#         name: size
+#         in: query
+#         type: integer
+#         minimum: 1
+#         maximum: 1000
+#         default: 10
+#         description: Number of documents to be returned
+#     v0@DocID:
+#         name: doc_id
+#         in: path
+#         type: string
+#         required: true
+#         description: Unique id of document
+#     v0@Query:
+#         name: query
+#         in: query
+#         type: string
+#         description: search term
+#     v0@ResponseType:
+#         name: response_format
+#         in: query
+#         type: string
+#         default: json
+#         enum:
+#             - json
+#             - xlsx
+#         description: expected output format
+#     v0@ProjectName:
+#         name: project_name
+#         in: query
+#         type: string
+#         required: true
+#         description: search term for project
+#     v0@FolderName:
+#         name: folder_name
+#         in: query
+#         type: string
+#         required: true
+#         description: search term for folder
+#     v0@Folder_Name:
+#         name: folder_name
+#         in: query
+#         type: string
+#         description: search term for folder
+#     v0@DocumentID:
+#         name: doc_id
+#         in: query
+#         type: string
+#         required: true
+#         description: search term for protocol_ID
+#     v0@IsBookmark:
+#       name: is_bookmark
+#       in: query
+#       type: boolean
+#       default: false
+#       description: bookmark flag
+#     v0@Dates:
+#         name: date
+#         in: query
+#         description: date array
+#         required: true
+#         type: array
+#         items:
+#             type: integer
+#     v0@Benchmarks:
+#         name: benchmarks
+#         in: query
+#         description: benchmark use for deepdive in graph view
+#         required: true
+#         type: string
+#     v0@UploadFile:
+#         in: formData
+#         name: upfile
+#         type: file
+#         required: true
+#         description: The file to upload.   
+#     v0@FileType:
+#         name: FileType
+#         in: query
+#         required: true
+#         type: string
+#         enum:
+#             - Complete
+#             - In Progress
+#         description: File type whether protocol is complete or In progress
+#     v0@AnnotationId:
+#         name: annotation_id
+#         in: query
+#         type: string
+#         required: true
+#         description: Unique id of annotation
+#     v0@DocId:
+#         name: doc_id
+#         in: query
+#         type: string
+#         required: true
+#         description: Unique id of document

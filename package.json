@@ -1,0 +1,36 @@
+{
+  "name": "tasklist",
+  "version": "1.0.0",
+  "description": "A User dashboard",
+  "main": "app.js",
+  "author": "Abhishek Mantri",
+  "license": "ISC",
+  "scripts": {
+    "start": "npm run dev",
+    "prestart": "npm install",
+    "dev": "bash scripts/start.sh"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.4.0",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.1.4",
+    "mongoose-unique-validator": "^2.0.1",
+    "path": "^0.12.7",
+    "promise": "^8.0.3",
+    "request": "^2.88.0",
+    "swagger-express-mw": "^0.7.0",
+    "swagger-ui-express": "^3.0.8",
+    "underscore": "^1.9.0",
+    "yaml-js": "^0.2.3",
+    "glob-all": "3.2.1",
+    "extendify": "^1.0.0",
+    "meanie-mongoose-to-json": "^1.3.0",
+    "meanie-mongoose-set-properties": "^2.0.4",
+    "bluebird": "^3.7.2",
+    "meanie-mongoose-only-id": "^1.0.1",
+    "bcryptjs": "^2.4.3",
+    "nodemon": "^2.0.7",
+    "redis": "^2.8.0"
+  }
+}
